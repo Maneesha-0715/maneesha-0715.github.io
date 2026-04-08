@@ -132,12 +132,39 @@
     color: #fff;
     box-shadow: 0 4px 24px rgba(79,142,247,0.3);
   }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(79,142,247,0.45); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(79,142,247,0.455); }
   .btn-ghost {
     background: transparent; color: var(--text);
     border: 1px solid var(--border);
   }
   .btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: rgba(79,142,247,0.06); }
+
+  /* ── RESUME BUTTON CUSTOM STYLE ── */
+  .resume-btn-container {
+    margin-top: 2.5rem;
+    opacity: 0;
+    animation: fadeUp 0.7s 0.9s forwards;
+  }
+  .btn-resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.9rem 2rem;
+    background: rgba(45, 212, 191, 0.1);
+    color: var(--teal);
+    border: 1px solid var(--teal);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  .btn-resume:hover {
+    background: var(--teal);
+    color: var(--bg);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(45, 212, 191, 0.3);
+  }
 
   .hero-stats {
     display: flex; gap: 3rem; margin-top: 4rem; padding-top: 3rem;
@@ -419,7 +446,6 @@
 <div class="orb orb2"></div>
 <div class="orb orb3"></div>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">MK.</div>
   <div class="nav-links">
@@ -431,7 +457,6 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div style="max-width:1100px;margin:0 auto;">
     <p class="hero-eyebrow">&#x2022; Available for Internship &amp; Full-Time Roles</p>
@@ -447,6 +472,13 @@
       <a href="https://www.linkedin.com/in/maneesha-killampalli-b740441bb/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
       <a href="https://github.com/Maneesha-0715" target="_blank" class="btn btn-ghost">GitHub ↗</a>
     </div>
+
+    <div class="resume-btn-container">
+      <a href="Maneesha_Resume.pdf" download class="btn-resume">
+        <span>📥</span> Download Full Resume (PDF)
+      </a>
+    </div>
+
     <div class="hero-stats">
       <div>
         <div class="stat-val">3.4</div>
@@ -471,7 +503,6 @@
 
 <div class="divider"></div>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="container">
     <div class="sec-header reveal">
@@ -533,7 +564,6 @@
 
 <div class="divider"></div>
 
-<!-- EXPERIENCE -->
 <section id="experience">
   <div class="container">
     <div class="sec-header reveal">
@@ -558,7 +588,6 @@
 
 <div class="divider"></div>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="container">
     <div class="sec-header reveal">
@@ -567,7 +596,6 @@
     </div>
     <div class="projects-grid">
 
-      <!-- Project 1 -->
       <div class="project-card reveal">
         <div class="project-header">
           <div class="project-icon">🛒</div>
@@ -590,7 +618,6 @@
         </div>
       </div>
 
-      <!-- Project 2 -->
       <div class="project-card reveal">
         <div class="project-header">
           <div class="project-icon">🏠</div>
@@ -610,7 +637,6 @@
         </div>
       </div>
 
-      <!-- Project 3 -->
       <div class="project-card reveal">
         <div class="project-header">
           <div class="project-icon">📍</div>
@@ -630,7 +656,6 @@
         </div>
       </div>
 
-      <!-- Project 4 -->
       <div class="project-card reveal">
         <div class="project-header">
           <div class="project-icon">🔐</div>
@@ -648,7 +673,6 @@
         <div class="project-badge">📄 Published Research · 2023</div>
       </div>
 
-      <!-- Project 5 -->
       <div class="project-card reveal">
         <div class="project-header">
           <div class="project-icon">🩸</div>
@@ -673,7 +697,6 @@
 
 <div class="divider"></div>
 
-<!-- EDUCATION -->
 <section id="education">
   <div class="container">
     <div class="sec-header reveal">
@@ -707,7 +730,6 @@
 
 <div class="divider"></div>
 
-<!-- CERTIFICATIONS -->
 <section id="certs">
   <div class="container">
     <div class="sec-header reveal">
@@ -741,7 +763,6 @@
 
 <div class="divider"></div>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="container">
     <div class="contact-inner reveal">
